@@ -1,0 +1,129 @@
+
+
+$img1: url("../../img/Assets/Landing Page/Step-1/Android_white.png");
+$img2: url("../../img/Assets/Landing Page/Step-1/iOS_white.png");
+$img3: url("../../img/Assets/Landing Page/Step-1/Windows_white.png");
+$img4: url("../../img/Assets/Landing Page/Step-1/Blackberry_white.png");
+$img5: url("../../img/Assets/Landing Page/Step-1/Web_white.png");
+$img6: url("../../img/Assets/Landing Page/Step-2/small_white.png");
+$img7: url("../../img/Assets/Landing Page/Step-2/Medium_white.png");
+$img8: url("../../img/Assets/Landing Page/Step-2/Large_white.png");
+$img9: url("../../img/Assets/Landing Page/Step-2/n_a_white.png");
+$img10: url("../../img/Assets/Landing Page/Step-2/Standard_white.png");
+$img11: url("../../img/Assets/Landing Page/Step-2/Social_white.png");
+$img12: url("../../img/Assets/Landing Page/Step-2/Enterprise_white.png");
+
+.start{
+   background-image: url("../../img/Assets/Landing Page/Header/banner_bg.png");
+   background-size: cover;
+   height: 500px;
+   width: 100%;
+}
+.left-half{
+   
+}
+.triangle-up {
+   width: 10%;
+   height: 10%;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-bottom: 100px solid black;
+}
+
+.triangle-down {
+   width: 10%;
+   height: 10%;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-top: 100px solid black;
+}
+
+@mixin teja($imgurl)
+{
+   //
+    .imagecontainer {
+      margin: 50px auto;
+      display: block;
+      width: 120px;
+      height: 120px;
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      overflow: hidden;
+      position: relative;
+      background-color: #f6f6f6;
+      border: 8px solid #E6E6E6;
+      .imgclass{
+         transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+         -webkit-transform: rotate(-45deg);
+      }
+      &:hover{
+         border-color:  #F58031;
+         background-color: #012938;
+         .imgclass{
+            content: $imgurl;
+         }
+      }
+   }
+   //
+}
+
+
+.theme {
+   display: flex;
+   justify-content: space-around;
+   padding: 0 15% 0 15%;  
+   .div1{
+   @include teja($img1);
+   }
+   .div2 {
+      
+      @include teja($img2);
+   }
+   .div3{
+      @include teja($img3);
+   }
+   .div4{
+      @include teja($img4);
+   }
+   .div5{
+      @include teja($img5);
+   }
+   .div6{
+      @include teja($img6);
+   }
+   .div7{
+      @include teja($img7);
+   }
+   .div8{
+      @include teja($img8);
+   }
+   .div9{
+      @include teja($img9);
+   }
+   .div10{
+      @include teja($img10);
+   }
+   .div11{
+      @include teja($img11);
+   }
+   .div12{
+      @include teja($img12);
+   }
+
+}
+
+.select {
+    color: #989898;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: bitter;
+}
