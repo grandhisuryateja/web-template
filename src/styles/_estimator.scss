@@ -8,34 +8,63 @@ $img5: url("../../img/Assets/Landing Page/Step-1/Web_white.png");
 $img6: url("../../img/Assets/Landing Page/Step-2/small_white.png");
 $img7: url("../../img/Assets/Landing Page/Step-2/Medium_white.png");
 $img8: url("../../img/Assets/Landing Page/Step-2/Large_white.png");
-$img9: url("../../img/Assets/Landing Page/Step-2/n_a_white.png");
-$img10: url("../../img/Assets/Landing Page/Step-2/Standard_white.png");
-$img11: url("../../img/Assets/Landing Page/Step-2/Social_white.png");
-$img12: url("../../img/Assets/Landing Page/Step-2/Enterprise_white.png");
+$img9: url("../../img/Assets/Landing Page/Step-3/n_a_white.png");
+$img10: url("../../img/Assets/Landing Page/Step-3/Standard_white.png");
+$img11: url("../../img/Assets/Landing Page/Step-3/Social_white.png");
+$img12: url("../../img/Assets/Landing Page/Step-3/Enterprise_white.png");
+$img13: url("../../img/Assets/Landing Page/Step-4/n_a_white.png");
+$img14: url("../../img/Assets/Landing Page/Step-4/data_white.png");
+$img15: url("../../img/Assets/Landing Page/Step-4/Large-Files_white.png");
+$img16: url("../../img/Assets/Landing Page/Step-5/no_white.png");
+$img17: url("../../img/Assets/Landing Page/Step-5/simple_white.png");
+$img18: url("../../img/Assets/Landing Page/Step-5/Advanced_white.png");
+$img19: url("../../img/Assets/Landing Page/Step-6/no_white.png");
+$img20: url("../../img/Assets/Landing Page/Step-6/simple_white.png");
+$img21: url("../../img/Assets/Landing Page/Step-6/Advanced_white.png");
+$img22: url("../../img/Assets/Landing Page/Step-7/no_white.png");
+$img23: url("../../img/Assets/Landing Page/Step-7/simple_white.png");
+$img24: url("../../img/Assets/Landing Page/Step-7/Advanced_white.png");
+$img25: url("../../img/Assets/Landing Page/Step-8/n_a_white.png");
+$img26: url("../../img/Assets/Landing Page/Step-8/Push_SMS_Email_white.png");
+$img27: url("../../img/Assets/Landing Page/Step-8/Advanced_social_white.png");
 
 .start{
    background-image: url("../../img/Assets/Landing Page/Header/banner_bg.png");
    background-size: cover;
    height: 500px;
    width: 100%;
+   padding: 10% 10% 10% 10%;
 }
+
 .left-half{
-   
+   display: flex;
+   justify-content: space-around;
+   height:  0%;
+   width:   50%; 
+   margin: 50px 1px 5px -15px; 
 }
+
+.right-half{
+   margin:  0% 0 10% 50%; 
+   color:   white;
+   width:   50%;  
+}
+
 .triangle-up {
-   width: 10%;
-   height: 10%;
-   border-left: 50px solid transparent;
-   border-right: 50px solid transparent;
-   border-bottom: 100px solid black;
+   width: 0; 
+   height: 0; 
+   border-bottom: 160px solid white; 
+   border-left: 100px solid transparent; 
+   border-right:100px solid transparent;
+   background-image: url("../../img/Assets/Landing Page/Header/android_logo.png");
 }
 
 .triangle-down {
-   width: 10%;
-   height: 10%;
-   border-left: 50px solid transparent;
-   border-right: 50px solid transparent;
-   border-top: 100px solid black;
+   width: 0; 
+   height: 0;
+   border-top: 160px solid white; 
+   border-left: 100px solid transparent; 
+   border-right: 100px solid transparent; 
 }
 
 @mixin teja($imgurl)
@@ -111,6 +140,53 @@ $img12: url("../../img/Assets/Landing Page/Step-2/Enterprise_white.png");
    .div12{
       @include teja($img12);
    }
+   .div13{
+      @include teja($img13);
+   }
+   .div14{
+      @include teja($img14);
+   }
+   .div15{
+      @include teja($img15);
+   }
+   .div16{
+      @include teja($img16);
+   }
+   .div17{
+      @include teja($img17);
+   }
+   .div18{
+      @include teja($img18);
+   }
+   .div19{
+      @include teja($img19);
+   }
+   .div20{
+      @include teja($img20);
+   }
+   .div21{
+      @include teja($img21);
+   }
+   .div22{
+      @include teja($img22);
+   }
+   .div23{
+      @include teja($img23);
+   }
+   .div24{
+      @include teja($img24);
+   }
+   .div25{
+      @include teja($img25);
+   }
+   .div26{
+      @include teja($img26);
+   }
+   .div27{
+      @include teja($img27);
+   }
+
+
 
 }
 
