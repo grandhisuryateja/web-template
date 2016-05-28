@@ -1,7 +1,6 @@
 
-
-$img1: url("../../img/Assets/Landing Page/Step-1/Android_white.png");
-$img2: url("../../img/Assets/Landing Page/Step-1/iOS_white.png");
+$img1: url("../../img/Assets/Landing Page/Step-1/iOS_white.png");
+$img2: url("../../img/Assets/Landing Page/Step-1/Android_white.png");
 $img3: url("../../img/Assets/Landing Page/Step-1/Windows_white.png");
 $img4: url("../../img/Assets/Landing Page/Step-1/Blackberry_white.png");
 $img5: url("../../img/Assets/Landing Page/Step-1/Web_white.png");
@@ -27,6 +26,34 @@ $img24: url("../../img/Assets/Landing Page/Step-7/Advanced_white.png");
 $img25: url("../../img/Assets/Landing Page/Step-8/n_a_white.png");
 $img26: url("../../img/Assets/Landing Page/Step-8/Push_SMS_Email_white.png");
 $img27: url("../../img/Assets/Landing Page/Step-8/Advanced_social_white.png");
+$img28: url("../../img/Assets/Landing Page/Step-9/mvp_white.png");
+$img29: url("../../img/Assets/Landing Page/Step-9/Polished_white.png");
+$img30: url("../../img/Assets/Landing Page/Step-10/n_a_white.png");
+$img31: url("../../img/Assets/Landing Page/Step-10/Complete_white.png");
+$img32: url("../../img/Assets/Landing Page/Step-11/none_white.png");
+$img33: url("../../img/Assets/Landing Page/Step-11/Minimal_white.png");
+$img34: url("../../img/Assets/Landing Page/Step-11/Everything_white.png");
+$img35: url("../../img/Assets/Landing Page/Step-12/not_important_white.png");
+$img36: url("../../img/Assets/Landing Page/Step-12/important_white.png");
+$img37: url("../../img/Assets/Landing Page/Step-13/not_important_white.png");
+$img38: url("../../img/Assets/Landing Page/Step-13/important_white.png");
+$img39: url("../../img/Assets/Landing Page/Step-14/No_major_backend_logic_white.png");
+$img40: url("../../img/Assets/Landing Page/Step-14/with_ready_service_white.png");
+$img41: url("../../img/Assets/Landing Page/Step-14/not_service_enabled_white.png");
+$img42: url("../../img/Assets/Landing Page/Step-14/needs_to_be_created_white.png");
+$img43: url("../../img/Assets/Landing Page/Step-15/Not_Required_white.png");
+$img44: url("../../img/Assets/Landing Page/Step-15/Required_white.png");
+$padding-5-items: 0 10% 0 10%;
+$padding-4-items: 0 20% 0 20%;
+$padding-3-items: 0 25% 0 25%;
+$padding-2-items: 0 35% 0 35%;
+
+.top-header {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  color : #7E7E7E;
+  background-color: #012938;
+  padding: 2%;
+}
 
 .start{
    background-image: url("../../img/Assets/Landing Page/Header/banner_bg.png");
@@ -56,7 +83,6 @@ $img27: url("../../img/Assets/Landing Page/Step-8/Advanced_social_white.png");
    border-bottom: 160px solid white; 
    border-left: 100px solid transparent; 
    border-right:100px solid transparent;
-   background-image: url("../../img/Assets/Landing Page/Header/android_logo.png");
 }
 
 .triangle-down {
@@ -67,7 +93,23 @@ $img27: url("../../img/Assets/Landing Page/Step-8/Advanced_social_white.png");
    border-right: 100px solid transparent; 
 }
 
-@mixin teja($imgurl)
+ p{
+    padding-top: 0px;
+    color: #333;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inner_span{
+   display: block;
+   font-weight: normal;
+   text-align: center;
+}
+
+@mixin rhombus($imgurl)
 {
    //
     .imagecontainer {
@@ -98,95 +140,160 @@ $img27: url("../../img/Assets/Landing Page/Step-8/Advanced_social_white.png");
    //
 }
 
-
-.theme {
+@mixin padding($padding-items)
+{
    display: flex;
    justify-content: space-around;
-   padding: 0 15% 0 15%;  
+   padding: $padding-items;   
+}
+
+.theme-five{
+   @include padding($padding-5-items);
    .div1{
-   @include teja($img1);
+   @include rhombus($img1);
    }
    .div2 {
-      
-      @include teja($img2);
+      @include rhombus($img2);
    }
    .div3{
-      @include teja($img3);
+      @include rhombus($img3);
    }
    .div4{
-      @include teja($img4);
+      @include rhombus($img4);
    }
    .div5{
-      @include teja($img5);
+      @include rhombus($img5);
    }
-   .div6{
-      @include teja($img6);
-   }
-   .div7{
-      @include teja($img7);
-   }
-   .div8{
-      @include teja($img8);
-   }
+}
+
+.theme-four{
+   @include padding($padding-4-items);
    .div9{
-      @include teja($img9);
+      @include rhombus($img9);
    }
    .div10{
-      @include teja($img10);
+      @include rhombus($img10);
    }
    .div11{
-      @include teja($img11);
+      @include rhombus($img11);
    }
    .div12{
-      @include teja($img12);
+      @include rhombus($img12);
+   }
+   .div39{
+      @include rhombus($img39);
+   }
+   .div40{
+      @include rhombus($img40);
+   }
+   .div41{
+      @include rhombus($img41);
+   }
+   .div42{
+      @include rhombus($img42);
+   }
+
+}
+
+.theme-three{
+   @include padding($padding-3-items);
+   .div6{
+      @include rhombus($img6);
+   }
+   .div7{
+      @include rhombus($img7);
+   }
+   .div8{
+      @include rhombus($img8);
    }
    .div13{
-      @include teja($img13);
+      @include rhombus($img13);
    }
    .div14{
-      @include teja($img14);
+      @include rhombus($img14);
    }
    .div15{
-      @include teja($img15);
+      @include rhombus($img15);
    }
    .div16{
-      @include teja($img16);
+      @include rhombus($img16);
    }
    .div17{
-      @include teja($img17);
+      @include rhombus($img17);
    }
    .div18{
-      @include teja($img18);
+      @include rhombus($img18);
    }
    .div19{
-      @include teja($img19);
+      @include rhombus($img19);
    }
    .div20{
-      @include teja($img20);
+      @include rhombus($img20);
    }
    .div21{
-      @include teja($img21);
+      @include rhombus($img21);
    }
    .div22{
-      @include teja($img22);
+      @include rhombus($img22);
    }
    .div23{
-      @include teja($img23);
+      @include rhombus($img23);
    }
    .div24{
-      @include teja($img24);
+      @include rhombus($img24);
    }
    .div25{
-      @include teja($img25);
+      @include rhombus($img25);
    }
    .div26{
-      @include teja($img26);
+      @include rhombus($img26);
    }
    .div27{
-      @include teja($img27);
+      @include rhombus($img27);
    }
+   .div32{
+      @include rhombus($img32);
+   }
+   .div33{
+      @include rhombus($img33);
+   }
+   .div34{
+      @include rhombus($img34);
+   }
+}
 
-
+.theme-two{
+   @include padding($padding-2-items);
+   .div28{
+      @include rhombus($img28);
+   }
+   .div29{
+      @include rhombus($img29);
+   }
+   .div30{
+      @include rhombus($img30);
+   }
+   .div31{
+      @include rhombus($img31);
+   }
+   .div35{
+      @include rhombus($img35);
+   }
+   .div36{
+      @include rhombus($img36);
+   }
+   .div37{
+      @include rhombus($img37);
+   }
+   .div38{
+      @include rhombus($img38);
+   }
+   .div43{
+      @include rhombus($img43);
+   }
+   .div44{
+      @include rhombus($img44);
+   }
 
 }
 
@@ -202,4 +309,25 @@ h2 {
     font-size: 28px;
     text-align: center;
     font-family: bitter;
+}
+
+.bottom-footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  color : #7E7E7E;
+  background-color: #012938;
+}
+
+.hi-footerfont {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+span.orange{
+   color: #F8611A;
+   background: none;
+}
+
+span.white{
+   color: #FFFFFF;
+   background: none;
 }
