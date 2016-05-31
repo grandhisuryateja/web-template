@@ -128,11 +128,7 @@ $padding-2-items: 0 35% 0 35%;
    border-top: 160px solid white; 
    border-left: 100px solid transparent; 
    border-right: 100px solid transparent; 
-   .img-style{
-     position: absolute;
-     top: 65%;
-     left: 10%;
-  }
+   background: url("../../img/Assets/Landing-Page/Header/android_logo.png");
 }
 
 
@@ -174,29 +170,16 @@ $padding-2-items: 0 35% 0 35%;
          -ms-transform: rotate(-45deg);
          -webkit-transform: rotate(-45deg);
       }
-      &:hover{
-         border-color:  #F58031;
-         background-color: #012938;
-         .imgclass{
-            content: $imgurl;
-         }
-      }
+      
    }
    //
 }
 
-@mixin select($imgurl){
-      .imagecontainer{
+.select-1{
+  .imagecontainer{
       border-color:  #F58031 !important;
       background-color: #012938 !important;
       }
-      
-}
-
-
-
-.select-1{
-  @include select($img1);
 }
 
 

@@ -3,27 +3,50 @@
        {
            "id" : "platform_iOS",
            "value" : "100",
-           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-1/iOS.png"
        },
        {
            "id" : "platform_Android",
            "value" : "200",
-           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Android_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-1/Android.png"
        },
        {
            "id" : "platform_Windows",
            "value" : "300",
-           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Windows_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-1/Windows.png"
        },
        {
            "id" : "platform_Blackberry",
            "value" : "400",
-           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Blackberry_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-1/Blackberry.png"
        },
        {
            "id" : "platform_Web",
            "value" : "500",
-           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Web_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-1/Web.png"
+       },
+       {
+           "id" : "size_small",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-2/small_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-2/small.png"
+       },
+       {
+           "id" : "size_medium",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-2/Medium_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-2/Medium.png"
+       },
+       {
+           "id" : "size_large",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-2/Large_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-2/Large.png"
        }
    ]
 }
