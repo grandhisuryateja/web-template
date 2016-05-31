@@ -1,0 +1,29 @@
+{
+   "prices" : [
+       {
+           "id" : "platform_iOS",
+           "value" : "100",
+           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+       },
+       {
+           "id" : "platform_Android",
+           "value" : "200",
+           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+       },
+       {
+           "id" : "platform_Windows",
+           "value" : "300",
+           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+       },
+       {
+           "id" : "platform_Blackberry",
+           "value" : "400",
+           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+       },
+       {
+           "id" : "platform_Web",
+           "value" : "500",
+           "url"  : "/img/Assets/Landing-Page/Step-1/iOS_white.png"
+       }
+   ]
+}
