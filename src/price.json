@@ -47,6 +47,24 @@
            "value" : "300",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-2/Large_white.png",
            "image" : "/img/Assets/Landing-Page/Step-2/Large.png"
+       },
+       {
+           "id" : "existingDataSources_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-5/no_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-5/no.png"
+       },
+       {
+           "id" : "existingDataSources_simple",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-5/simple_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-5/simple.png"
+       },
+       {
+           "id" : "existingDataSources_advanced",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-5/Advanced_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-5/Advanced.png"
        }
    ]
 }
