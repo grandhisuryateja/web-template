@@ -1,4 +1,3 @@
-
 $img1: url("../../img/Assets/Landing-Page/Step-1/iOS_white.png");
 $img2: url("../../img/Assets/Landing-Page/Step-1/Android_white.png");
 $img3: url("../../img/Assets/Landing-Page/Step-1/Windows_white.png");
@@ -59,79 +58,75 @@ $padding-2-items: 0 35% 0 35%;
    height: 500px;
    width: 100%;
    padding: 10% 10% 10% 10%;
+   display: flex;
+   justify-content: center;
+   flex-grow: 1;
+   flex-shrink: 1;
 }
 
 .left-half{
    display: flex;
    justify-content: space-around;
-   height:  0%;
+   height:  70%;
    width:   50%; 
-   margin: 50px 1px 5px -15px; 
+   margin-top: 24px; 
 }
 
 .right-half{
-   margin:  0% 0 10% 50%; 
-   color:   white;
-   width:   50%;  
+    color:   #ffffff;
+    width:   50%; 
+   .main-heading{
+    font-family:  Lato Black;
+    font-size:  76px;
+   }
+   .sub-heading{
+    font-family:  Lato Black;
+    font-style: Regular;
+    font-size:  32px;
+   } 
 }
-
-.triangle-up {
-   width: 0; 
-   height: 0; 
-   border-bottom: 160px solid white; 
-   border-left: 100px solid transparent; 
-   border-right:100px solid transparent;
+.progress-bar-container{
+  width:100%;
+  height:6em;
+  background-color: #E6E6E6;
 }
-.kwadrat2
-{ 
-  width: 232px; 
-  height: 170px; 
-  border-top: 1px solid #fff; 
-  overflow: hidden; 
-  margin-top: 5px; 
+.tooltip{ 
+  position:relative;
+  float:right;
 }
-
-.trojkat2
+.tooltip > .tooltip-inner 
 {
-  position: relative;
-  overflow: hidden;
-  transform: rotate(45deg) skew(10deg,10deg);
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
-  width: 200px;
-  height: 200px;
-  margin:-100px 0 0 16px;
-  background: white;
-  background-size: 29% 44%;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-}
-.trojkat_bg2
-{
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  z-index: -1;
-  background: url("../../img/Assets/Landing-Page/Header/android_logo.png");
-  background-size: 100%;
-  background-position: center top;
-  transform: skew(-10deg,-10deg) rotate(-45deg) ;
-  transition: .3s;
-} 
-
-.triangle-down {
-   width: 0; 
-   height: 0;
-   border-top: 160px solid white; 
-   border-left: 100px solid transparent; 
-   border-right: 100px solid transparent; 
-   background: url("../../img/Assets/Landing-Page/Header/android_logo.png");
+background-color: #0c232c; 
+padding:25px 25px; 
+color:#ffffff; 
+font-weight:bold; 
+font-size:13px;
 }
 
+.popOver + .tooltip > .tooltip-arrow 
+{  
+border-left: 115px solid transparent; 
+border-right: 115px solid transparent; 
+border-top: 115px solid #0c232c;
+}
 
+.section{
+  margin:50px auto; 
+}
+.progress{
+  overflow:visible;
+  height:12px;
+  margin: 5% 5% 0% 3%;
+  background-color:  #dadada; 
+  box-shadow: none !important;
+}
+.progress-bar{
+   background:#fa6023;
+  border-radius:10px;
+  height:100%;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
 
  p{
     padding-top: 0px;
@@ -145,8 +140,9 @@ $padding-2-items: 0 35% 0 35%;
 
 .inner_span{
    display: block;
-   font-weight: normal;
+   font-weight: regular;
    text-align: center;
+   font-family: Lato;
 }
 
 @mixin rhombus($imgurl)
@@ -187,7 +183,9 @@ $padding-2-items: 0 35% 0 35%;
 {
    display: flex;
    justify-content: space-around;
-   padding: $padding-items;   
+   padding: $padding-items; 
+   margin-top:  3%;
+   margin-bottom: 8%;  
 }
 
 .theme-five{
@@ -354,6 +352,19 @@ h2 {
     font-family: bitter;
 }
 
+.button-style
+{
+    background-color: #fa6023;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 2% 0% 2% 45%;
+    text-align: center;
+    font-family: Lato;
+    border: none;
+    font-size:  16px;
+    padding: 1% 1% 1% 1%;
+}
+
 .bottom-footer {
   border-top: 1px solid rgba(0,0,0,0.1);
   color : #99a5aa;
@@ -376,4 +387,22 @@ span.orange{
 span.white{
    color: #FFFFFF;
    background: none;
+}
+.project-estimate{
+  display:none;
+  text-align: center;
+  width:  100%;
+  background-color: #E6E6E6;
+  font-family:  Lato;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 30px;
+}
+.triangle-down {
+  width: 100%;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+  display:none;
 }

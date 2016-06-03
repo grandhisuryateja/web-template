@@ -49,6 +49,48 @@
            "image" : "/img/Assets/Landing-Page/Step-2/Large.png"
        },
        {
+           "id" : "userManagement_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-3/n_a_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-3/n_a.png"
+       },
+       {
+           "id" : "userManagement_standard",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-3/Standard_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-3/Standard.png"
+       },
+       {
+           "id" : "userManagement_social",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-3/Social_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-3/Social.png"
+       },
+       {
+           "id" : "userManagement_enterprise",
+           "value" : "400",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-3/Enterprise_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-3/Enterprise.png"
+       },
+       {
+           "id" : "dataType_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-4/n_a_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-4/n_a.png"
+       },
+       {
+           "id" : "dataType_data",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-4/data_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-4/data.png"
+       },
+       {
+           "id" : "dataType_largeFiles",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-4/Large-Files_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-4/Large-Files.png"
+       },
+       {
            "id" : "existingDataSources_none",
            "value" : "100",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-5/no_white.png",
@@ -65,6 +107,162 @@
            "value" : "300",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-5/Advanced_white.png",
            "image" : "/img/Assets/Landing-Page/Step-5/Advanced.png"
+       },
+       {
+           "id" : "locationData_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-6/no_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-6/no.png"
+       },
+       {
+           "id" : "locationData_simple",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-6/simple_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-6/simple.png"
+       },
+       {
+           "id" : "locationData_advanced",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-6/Advanced_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-6/Advanced.png"
+       },
+       {
+           "id" : "thirdPartyCloudAPI_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-7/no_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-7/no.png"
+       },
+       {
+           "id" : "thirdPartyCloudAPI_simple",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-7/simple_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-7/simple.png"
+       },
+       {
+           "id" : "thirdPartyCloudAPI_advanced",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-7/Advanced_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-7/Advanced.png"
+       },
+       {
+           "id" : "userEngagement_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-8/n_a_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-8/n_a.png"
+       },
+       {
+           "id" : "userEngagement_push",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-8/Push_SMS_Email_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-8/Push_SMS_Email.png"
+       },
+       {
+           "id" : "userEngagement_social",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-8/Advanced_social_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-8/Advanced_social.png"
+       },
+       {
+           "id" : "quality_mvp",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-9/mvp_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-9/mvp.png"
+       },
+       {
+           "id" : "quality_polished",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-9/Polished_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-9/Polished.png"
+       },
+       {
+           "id" : "security_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-10/n_a_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-10/n_a.png"
+       },
+       {
+           "id" : "security_complete",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-10/Complete_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-10/Complete.png"
+       },
+       {
+           "id" : "analytics_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-11/none_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-11/none.png"
+       },
+       {
+           "id" : "analytics_minimal",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-11/Minimal_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-11/Minimal.png"
+       },
+       {
+           "id" : "analytics_everything",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-11/Everything_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-11/Everything.png"
+       },
+       {
+           "id" : "reliability_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-12/not_important_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-12/not_important.png"
+       },
+       {
+           "id" : "reliability_important",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-12/important_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-12/important.png"
+       },
+       {
+           "id" : "webPortal_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-13/not_important_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-13/not_important.png"
+       },
+       {
+           "id" : "webPortal_important",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-13/important_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-13/important.png"
+       },
+       {
+           "id" : "backend_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-14/No_major_backend_logic_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-14/No_major_backend_logic.png"
+       },
+       {
+           "id" : "backend_builtWithService",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-14/with_ready_service_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-14/with_ready_service.png"
+       },
+       {
+           "id" : "backend_builtWithoutService",
+           "value" : "300",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-14/not_service_enabled_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-14/not_service_enabled.png"
+       },
+       {
+           "id" : "backend_toCreate",
+           "value" : "400",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-14/needs_to_be_created_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-14/needs_to_be_created.png"
+       },
+       {
+           "id" : "offlineSupport_none",
+           "value" : "100",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-15/Not_Required_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-15/Not_Required.png"
+       },
+       {
+           "id" : "offlineSupport_required",
+           "value" : "200",
+           "imageWhite"  : "/img/Assets/Landing-Page/Step-15/Required_white.png",
+           "image" : "/img/Assets/Landing-Page/Step-15/Required.png"
        }
    ]
 }
