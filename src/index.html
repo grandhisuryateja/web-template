@@ -19,17 +19,18 @@
 
 </head>
 <body>
+
 <header>
     <div class="top-header">
     <img src="/img/Assets/Landing-Page/Header/hashedin_logo.png">
     </div>
 </header>
-  <!--[if lt IE 10]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
-  <!-- <img src="img/Assets/Landing Page/Header/banner_bg.png" > -->
-  <div class = "start">
+  
+<!-- <button id="next">Next</button> -->
+<div id="all-divs">
+<div class = "step" id="step-0">
+<div class = "start">
 	  <div class = "left-half">	
 			<img src="/img/Assets/Landing-Page/Header/header_img.png">
 		</div>
@@ -41,90 +42,56 @@
 	  <br>using this handy tool.</div>
 	  </div>
   </div>
-  <div id="all-divs">
-  <h2>What platform will your apps run on?</h2>
-  <p class="select">(Select all that apply)</p>
-  <!-- <div id="diamond"> -->
-  	
-  	<div class="theme-five" id="first-div">
- 		<div class="div1 a" id="platform_iOS"> 	
+  <br>
+<button id="singlebutton" class="btn btn-default center-block btn-lg" type="submit" >Lets Go</button>
+  <br>
+</div>
+<div class="step" id="step-1">
+<h2>What platform will your apps run on?</h2>
+  <p class="select">(Select all that apply)</p>  
+<div class="theme-five" id="first-div">
+ 		<div class="div1 multiple-click" id="platform_iOS"> 	
 	    	<div class="imagecontainer" id="ypyo">
 	    		<img src="/img/Assets/Landing-Page/Step-1/iOS.png" class = "imgclass"/>
 	    	</div>
 	    	<p>iOS</p>
 	    </div>
-	    <div class="div2 a" id="platform_Android"> 	
+	    <div class="div2 multiple-click" id="platform_Android"> 	
 	    	<div class="imagecontainer">
 	    		<img src="/img/Assets/Landing-Page/Step-1/Android.png" class = "imgclass"/>
 	    	</div>
 	    	<p>Android</p>
 	    </div>
-	    <div class="div3 a" id="platform_Windows"> 	
+	    <div class="div3 multiple-click" id="platform_Windows"> 	
 	    	<div class="imagecontainer">
 	    		<img src="/img/Assets/Landing-Page/Step-1/Windows.png" class = "imgclass"/>
 	    	</div>
 	    	<p>Windows</p>
 	    </div>
-	    <div class="div4 a" id="platform_Blackberry"> 	
+	    <div class="div4 multiple-click" id="platform_Blackberry"> 	
 	    	<div class="imagecontainer">
 	    		<img src="/img/Assets/Landing-Page/Step-1/Blackberry.png" class = "imgclass"/>
 	    	</div>
 	    	<p>Blackberry</p>
 	    </div>
-	    <div class="div5 a" id="platform_Web"> 	
+	    <div class="div5 multiple-click" id="platform_Web"> 	
 	    	<div class="imagecontainer">
 	    		<img src="/img/Assets/Landing-Page/Step-1/Web.png" class = "imgclass"/>
 	    	</div>
 	    	<p>Web</p>
 	    </div>
     </div>
-    <div class = "progress-bar-container" id="theFixed">
-    	<section class="section">
-    <div class="col-md-2 col-lg-2"></div>
-    <div class="col-md-8 col-lg-8">   
-	<div class="progress-1">
-  	<div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10" >   
-  	       
-	</div>
-	<div class="tool"></div>
-      <div class="price"></div>
-	</div>
-     <div class="col-md-2 col-lg-2"></div>
-	</div>
-	</section>
-
+    <div>
+    	 <span class="glyphicon glyphicon-menu-left"></span>
+    	 <span>Prev</span>
+    	 <span class="space"></span>
+    	 <span class="next-text">Next</span>
+    	 <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
     </div>
-
-    <h2>How big is your app going to be?</h2>
-
-	<div class="theme-three" id="second-div">
-	 		<div class="div6 b" id="size_small" value="100"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-2/small.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Small</p>
-		    	<span class="inner_span">(1-3 Screens)</span>
-		    </div>
-		    <div class="div7 b"  id="size_medium" value="100"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-2/Medium.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Medium</p>
-		    	<span class="inner_span">(3-8 Screens)</span>
-		    </div>
-		    <div class="div8 b" id="size_large" value="100"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-2/Large.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Large</p>
-		    	<span class="inner_span">(9+ Screens)</span>
-		    </div>
-	</div>
-	
-	<h2>How will you handle user management?</h2>
-	<p class="select">(Select all that apply)</p>
-
-	<div class="theme-four" id="third-div">
+  </div>
+  <div class="step" id="step-2">
+  <h2>How big is your app going to be?</h2>
+    <div class="theme-four" id="third-div">
  		<div class="div9 a" id="userManagement_none"> 	
 	    	<div class="imagecontainer">
 	    		<img src="/img/Assets/Landing-Page/Step-3/n_a.png" class = "imgclass"/>
@@ -150,288 +117,27 @@
 	    	<p>Enterprise</p>
 	    </div>
 	</div>
-
-	<h2>What kind of data will you store?</h2>
-	<p class="select">(Select all that apply)</p>
-	<div class="theme-three" id="fourth-div">
-	 		<div class="div13 a" id="dataType_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-4/n_a.png" class = "imgclass"/>
-		    	</div>
-		    	<p>N/A</p>
-		    	<span class="inner_span">(I am not storing any data)</span>
-		    </div>
-		    <div class="div14 a" id="dataType_data"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-4/data.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Data</p>
-		    	<span class="inner_span">(Just structured data,
-		    	<br>suited for a database)</span>
-		    </div>
-		    <div class="div15 a" id="dataType_largeFiles"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-4/Large-Files.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Large Files</p>
-		    	<span class="inner_span">(Structured data plus files
-		    	<br>like images,videos,etc)</span>
-		    </div>
-	</div>	
-
-	<h2>Will you need to integrate any existing data sources?</h2>
-	<div class="theme-three" id="fifth-div">
-	 		<div class="div16 b" id="existingDataSources_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-5/no.png" class = "imgclass"/>
-		    	</div>
-		    	<p>No</p>
-		    </div>
-		    <div class="div17 b" id="existingDataSources_simple"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-5/simple.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Simple</p>
-		    </div>
-		    <div class="div18 b" id="existingDataSources_advanced"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-5/Advanced.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Advanced</p>
-		    </div>
-	</div>
-
-	<h2>Will your app use location data?</h2>
-	<div class="theme-three" id="sixth-div">
-	 		<div class="div19 b" id="locationData_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-6/no.png" class = "imgclass"/>
-		    	</div>
-		    	<p>No</p>
-		    </div>
-		    <div class="div20 b" id="locationData_simple"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-6/simple.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Simple</p>
-		    </div>
-		    <div class="div21 b" id="locationData_advanced"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-6/Advanced.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Advanced</p>
-		    </div>
-	</div>
-
-	<h2>Will you integrate data from any third party cloud APIs?</h2>
-	<div class="theme-three" id="seventh-div">
-	 		<div class="div22 b" id="thirdPartyCloudAPI_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-7/no.png" class = "imgclass"/>
-		    	</div>
-		    	<p>No</p>
-		    </div>
-		    <div class="div23 b" id="thirdPartyCloudAPI_simple"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-7/simple.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Simple</p>
-		    </div>
-		    <div class="div24 b" id="thirdPartyCloudAPI_advanced"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-7/Advanced.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Advanced</p>
-		    </div>
-	</div>
-
-	<h2>How will you engage with your users?</h2>
-	<p class="select">(Select all that apply)</p>
-	<div class="theme-three" id="eigth-div">
-	 		<div class="div25 a" id="userEngagement_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-8/n_a.png" class = "imgclass"/>
-		    	</div>
-		    	<p>N/A</p>
-		    </div>
-		    <div class="div26 a" id="userEngagement_push"> 	
-		    	<div class="imagecontainer" >
-		    		<img src="/img/Assets/Landing-Page/Step-8/Push_SMS_Email.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Push,SMS,Email</p>
-		    </div>
-		    <div class="div27 a" id="userEngagement_social"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-8/Advanced_social.png" class = "imgclass"/>
-		    	</div>
-		    	<p> Advanced&nbsp;social integration</p>
-		    </div>
-	</div>
-
-	<h2>What will be the quality of your experience?</h2>
-	<div class="theme-two" id="ninth-div">
-	 		<div class="div28 b" id="quality_mvp"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-9/mvp.png" class = "imgclass"/>
-		    	</div>
-		    	<p>MVP</p>
-		    </div>
-		    <div class="div29 b" id="quality_polished"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-9/Polished.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Polished</p>
-		    </div>
-	</div>
-
-	<h2>What level of security will you need?</h2>
-	<div class="theme-two" id="tenth-div">
-	 		<div class="div30 b"  id="security_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-10/n_a.png" class = "imgclass"/>
-		    	</div>
-		    	<p>N/A</p>
-		    </div>
-		    <div class="div31 b" id="security_complete"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-10/Complete.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Complete</p>
-		    </div>
-	</div>
-
-	<h2>What kind of analytics data will you track?</h2>
-	<div class="theme-three" id="eleventh-div">
-	 		<div class="div32 b" id="analytics_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-11/none.png" class = "imgclass"/>
-		    	</div>
-		    	<p>None</p>
-		    </div>
-		    <div class="div33 b" id="analytics_minimal"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-11/Minimal.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Minimal</p>
-		    </div>
-		    <div class="div34 b" id="analytics_everything"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-11/Everything.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Everything</p>
-		    </div>
-	</div>
-
-	<h2>How important reliability/scale be to your app?</h2>
-	<div class="theme-two" id="twelth-div">
-	 		<div class="div35 b" id="reliability_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-12/not_important.png" class = "imgclass"/>
-		    	</div>
-		    	<p> Not&nbsp;Important </p>
-		    </div>
-		    <div class="div36 b" id="reliability_important"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-12/important.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Important</p>
-		    </div>
-	</div>
-
-	<h2>Will you need a web portal to administer your app?</h2>
-	<div class="theme-two" id="thirteenth-div">
-	 		<div class="div37 b" id="webPortal_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-13/not_important.png" class = "imgclass"/>
-		    	</div>
-		    	<p> Not&nbsp;Important </p>
-		    </div>
-		    <div class="div38 b" id="webPortal_important"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-13/important.png" class = "imgclass"/>
-		    	</div>
-		    	<p> Important</p>
-		    </div>
-	</div>
-
-	<h2>Will your app leverage an existing backend application?</h2>
-	<div class="theme-four" id="fourteenth-div">
- 		<div class="div39 b" id="backend_none">  	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/No_major_backend_logic.png" class = "imgclass"/>
-	    	</div>
-	    	<p>No major backend logic</p>
-	    </div>
-	    <div class="div40 b" id="backend_builtWithService"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/with_ready_service.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Backend build with ready services</p>
-	    </div>
-	    <div class="div41 b" id="backend_builtWithoutService"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/not_service_enabled.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Backend build not service enabled</p>
-	    </div>
-	     <div class="div42 b" id="backend_toCreate"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/needs_to_be_created.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Backend&nbsp;needs  to be created</p>
-	    </div>
-	</div>
-
-	<h2>Will your app need to work in offline mode?</h2>
-	<div class="theme-two" id="fifteenth-div">
-	 		<div class="div43 b" id="offlineSupport_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-15/Not_Required.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Not Required</p>
-		    </div>
-		    <div class="div44 b" id="offlineSupport_required"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-15/Required.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Required</p>
-		    </div>
-	</div>
-
-	<div class = "progress-bar-container">
-    <section class="section">
-    <div class="col-md-2 col-lg-2"></div>
-    <div class="col-md-8 col-lg-8">
-       
-	<div class="progress">
-  	<div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10" >   
-        <span  class="popOver" data-toggle="tooltip" data-placement="top" title="$0"> </span>     
-	</div>
-	</div>
-     <div class="col-md-2 col-lg-2"></div>
-	</div>
-	</section>
+	<div>
+    	 <span class="glyphicon glyphicon-menu-left"></span>
+    	 <span>Prev</span>
+    	 <span class="space"></span>
+    	 <span class="next-text">Next</span>
+    	 <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
     </div>
-    	    
-
-    <div class="project-estimate">
-    Project Estimate
-    <div id="project-estimate-cost"></div>
-    </div>
-    <div class="triangle-down"></div>
-    <button type="button" id="button" class="button-style">GET A QUOTE</button>
+	</div>
 </div>
-
+<div class = "progress-bar-container">
+	<!-- <hr width="60%" padding-top="30%"> -->
+	<span class="x">  </span>
+	<span> <hr> </span>
+</div>
 <footer>
     <div class="bottom-footer">
       <h6 class="hi-footerfont">
         &copy; <span class = "white">Hashed</span><span class="orange">In</span> Technologies Pvt. Ltd., 2015
       </h6>
     </div>
-</footer>    
-  <!-- </div> -->
-
-<!--   <div id = "diamond"> </div> -->
+</footer> 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="libs/jquery/dist/jquery.js"></script>
@@ -442,7 +148,7 @@
   <!-- build:js scripts/main.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild -->
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </body>
 </html>

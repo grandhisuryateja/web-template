@@ -23,91 +23,44 @@ $(document).ready(function() {
     	return dict;
     }
 
-    $('.a').on('click', function(event) {
-       dict =  dictionary(Data);
-        ID = $(this).attr('id');
-        // console.log(dict[ID]['imageWhite'],"dictionary");
-        $(this).toggleClass("select-1");
-        var self = this;
-        cost = dict[ID]['value'];
-        whiteImage = dict[ID]['imageWhite'];
-        image = dict[ID]['image'];
-        if($(self).hasClass("select-1")){
-        	total = total + parseInt(cost);
-        	$(self).children(".imagecontainer").children('.imgclass').attr("src", whiteImage);	
-        }
-         else{
-         	total = total - parseInt(cost);
-            $(self).children(".imagecontainer").children('.imgclass').attr("src", image);;
-         }
-         y = (parseInt(total)/parseInt(50));
-    	$(".progress-bar").each(function(){
-     	each_bar_width = y;
-    	 $(this).width(each_bar_width + '%');
-    	 $('.tool').show();
-  	}); 
-           	
-    });
-
-    $('.b').on('click', function(event) {
-    	//ID = $(this).attr('id');
-        var mainId = $(this).parent().attr('id');
-        $('#'+mainId).find('.b').removeClass("select-1");
-        // console.log($('#'+mainId).find('.b'),"$('#'+mainId).find('.b')");
-        $(this).addClass("select-1");	
-         // console.log(mainId,"parentid");
-        count = $('#'+mainId).find('.b').length;
-        dict =  dictionary(Data);
-        for(j = 0 ; j < count ; j++)
-         {
-			ID = $('#'+mainId).find('.b').eq(j).attr('id');
-			self = $('#'+mainId).find('.b').eq(j);
-   			cost = dict[ID]['value'];
-        	whiteImage = dict[ID]['imageWhite'];
-        	image = dict[ID]['image'];
-            if($(self).hasClass("select-1")){
-            	total = total + parseInt(cost);
-            	$(self).children(".imagecontainer").children('.imgclass').attr("src", whiteImage);	
-            }
-             else{	
-             $(self).children(".imagecontainer").children('.imgclass').attr("src", image);;
-             }   
-    }  
-    // console.log(total,"total-b");
-    });
+   var $steps = $('.step');
+  var currentStep = 0,
+      nextStep;
   
-     var x = 50;
-   	 var totalAll = 0;
-   	 maxValue = 5000;
-    $('#button').on('click', function(event) {
-    	console.log($('#all-divs'),"#all-divs");
-    	var allSelected = $('#all-divs').find('.select-1');
-    	console.log(allSelected,"allSelected");
-    	// console.log($('#size_small').attr("value"),"valuevalue");
-    	dict =  dictionary(Data);
-    	totalAll = 0;
-    	for(var k = 0 ; k < allSelected.length ; k++)
-    	{	
-    		 ID = $(allSelected[k]).attr("id")
-    		 totalAll = totalAll + parseInt(cost = dict[ID]['value']);
-    	}
-    	console.log(totalAll,"totalAlltotalAll");
-    	$('.project-estimate').show(1000);
-    	$('#project-estimate-cost').html('$' + totalAll);
-    	x = (parseInt(totalAll)/parseInt(50));
-    	$(".progress-bar").each(function(){
-     	each_bar_width = x;
-    	 $(this).width(each_bar_width + '%');
+  $steps.slice(1).hide(); //hide all but first
+  
+  $('#singlebutton , #next').on('click', function(e) {
+    e.preventDefault();
+    //console.log(e,"e");
+    nextStep = currentStep + 1;
+    // console.log(nextStep,"next");
+    if (nextStep == $steps.length) {
+      alert("You reached the end");
+      return;
+    }
+    $($steps.get(currentStep)).hide();
+    $($steps.get(nextStep)).show();
+    currentStep = nextStep;
+  });
 
-  	});
-   	 $('.progress-bar').find('span').attr('title','x');
-    });
+text ="";
+for(var i=0; i < 15; i++)
+{
+	text = text +"<span id=\"bullet"+ i +"\" class=\"bullet\">&#9670;&emsp;&emsp;&emsp;</span>";
+}
+$('.x').append(text);
+var w= $(window).width();
+var ww=parseInt($('.x').css('width'));
+var marginLeft=w/2-ww/2;
+$('.x').css('margin-left',marginLeft + "px");
+$('#bullet1').css('color','orange');
+console.log(ww);
+console.log(text,"text");
 
-
-
-    $(window).scroll(function(){
-     $("#theFixed").css("position",'fixed');
-     $("#theFixed").css("top",Math.max(0,970-$(this).scrollTop()));    
+$('.bullet').click(function(){
+	var myid=parseInt($(this).attr('id').replace(/[a-z]/g, ''))
+	console.log("This is id "+ myid);
+	$("step-"+myid).css('margin-left','0px');
+});
 });
 
-});

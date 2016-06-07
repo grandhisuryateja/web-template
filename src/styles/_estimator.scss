@@ -5,7 +5,7 @@
 }
 
 .start{
-   background-image: url("../../img/Assets/Landing-Page/Header/banner_bg.png");
+   background-image: url("../../img/Assets/Landing-Page/Header/Header_bg.png");
    background-size: cover;
    height: 500px;
    width: 100%;
@@ -38,66 +38,115 @@
    } 
 }
 
-
-.progress-bar-container{
-  width:100%;
-  height:6em;
-  background-color: #E6E6E6;
-  z-index:  5;
-}
-.tool{
-  position: relative;
-  float: left;
-  height: 24px;
-  width: 10%;
-  margin-top: -12px;
-  display:  none;
+#singlebutton{
+  background-color: #f44336;
+  border-color: #f44336;
+  color:  #ffffff;
 }
 
-.tool:after {
-    background: #0c232c;
-    border-radius: .5em;
-    bottom: 1.5em;
-    color: #fff;
-    content: "$234567";
-    display: block;
-    left: -3.5em;
-    padding: .3em 1em;
-    position: absolute;
-    text-shadow: 0 1px 0 #000;
-    white-space: nowrap;
-    z-index: 98;
+@mixin rhombus()
+{
+   //
+    .imagecontainer {
+      margin: 50px auto;
+      display: block;
+      width: 120px;
+      height: 120px;
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      overflow: hidden;
+      position: relative;
+      background-color: #f6f6f6;
+      border: 8px ;
+      cursor: pointer;
+      .imgclass{
+         transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+         -webkit-transform: rotate(-45deg);
+         vertical-align: middle;
+         display: inline-block;
+         height: 100%;
+      }
+
+   }
+   //
+} 
+
+@mixin padding($padding-items)
+{
+   display: flex;
+   justify-content: space-around;
+   padding: $padding-items; 
+   margin-top:  3%;
+   margin-bottom: 8%;  
 }
 
-.tool:before {
-    border: solid;
-    border-color: #0c232c transparent;
-    border-width: .5em .5em 0 .6em;
-    bottom: 1em;
-    content: "";
-    display: block;
-    left: -1.0em;
-    position: absolute;
-    z-index: 99;
+@mixin background($background-color)
+{
+  background-color: $background-color;
 }
 
-.section{
-  margin:50px auto; 
-}
-.progress{
-  overflow:visible;
-  height:12px;
-  margin: 5% 5% 0% 3%;
-  background-color:  #dadada; 
-  box-shadow: none !important;
+#step-1{
+  @include background($background-color-step-1);
 }
 
-.progress-bar{
-  background:#fa6023;
-  border-radius:10px;
-  height:100%;
-  -webkit-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
+#step-2{
+  @include background($background-color-step-2);
+}
+
+.theme-five{
+   @include padding($padding-5-items);  
+   .div1{
+   @include rhombus();
+   }
+   .div2 {
+      @include rhombus();
+   }
+   .div3{
+      @include rhombus();
+   }
+   .div4{
+      @include rhombus();
+   }
+   .div5{
+      @include rhombus();
+   }
+}
+
+.theme-four{
+   @include padding($padding-4-items);
+   .div9{
+      @include rhombus();
+   }
+   .div10{
+      @include rhombus();
+   }
+   .div11{
+      @include rhombus();
+   }
+   .div12{
+      @include rhombus();
+   }
+   .div39{
+      @include rhombus();
+   }
+   .div40{
+      @include rhombus();
+   }
+   .div41{
+      @include rhombus();
+   }
+   .div42{
+      @include rhombus();
+   }
+
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: bitter;
 }
 
  p{
@@ -115,234 +164,6 @@
    font-weight: regular;
    text-align: center;
    font-family: Lato;
-}
-.progress-1{
-  overflow:visible;
-  height:12px;
-  margin-top: -2%;
-  background-color:  #dadada; 
-  box-shadow: none !important;
-  border-radius:  10px;
-}
-
-@mixin rhombus($imgurl)
-{
-   //
-    .imagecontainer {
-      margin: 50px auto;
-      display: block;
-      width: 120px;
-      height: 120px;
-      transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      overflow: hidden;
-      position: relative;
-      background-color: #f6f6f6;
-      border: 8px solid #E6E6E6;
-      cursor: pointer;
-      .imgclass{
-         transform: rotate(-45deg);
-         -ms-transform: rotate(-45deg);
-         -webkit-transform: rotate(-45deg);
-      }
-      
-   }
-   //
-}
-
-.select-1{
-  .imagecontainer{
-      border-color:  #F58031 !important;
-      background-color: #012938 !important;
-      }
-}
-
-
-@mixin padding($padding-items)
-{
-   display: flex;
-   justify-content: space-around;
-   padding: $padding-items; 
-   margin-top:  3%;
-   margin-bottom: 8%;  
-}
-
-.theme-five{
-   @include padding($padding-5-items);
-   .div1{
-   @include rhombus($img1);
-   }
-   .div2 {
-      @include rhombus($img2);
-   }
-   .div3{
-      @include rhombus($img3);
-   }
-   .div4{
-      @include rhombus($img4);
-   }
-   .div5{
-      @include rhombus($img5);
-   }
-}
-
-.theme-four{
-   @include padding($padding-4-items);
-   .div9{
-      @include rhombus($img9);
-   }
-   .div10{
-      @include rhombus($img10);
-   }
-   .div11{
-      @include rhombus($img11);
-   }
-   .div12{
-      @include rhombus($img12);
-   }
-   .div39{
-      @include rhombus($img39);
-   }
-   .div40{
-      @include rhombus($img40);
-   }
-   .div41{
-      @include rhombus($img41);
-   }
-   .div42{
-      @include rhombus($img42);
-   }
-
-}
-
-.theme-three{
-   @include padding($padding-3-items);
-   .div6{
-      @include rhombus($img6);
-   }
-   .div7{
-      @include rhombus($img7);
-   }
-   .div8{
-      @include rhombus($img8);
-   }
-   .div13{
-      @include rhombus($img13);
-   }
-   .div14{
-      @include rhombus($img14);
-   }
-   .div15{
-      @include rhombus($img15);
-   }
-   .div16{
-      @include rhombus($img16);
-   }
-   .div17{
-      @include rhombus($img17);
-   }
-   .div18{
-      @include rhombus($img18);
-   }
-   .div19{
-      @include rhombus($img19);
-   }
-   .div20{
-      @include rhombus($img20);
-   }
-   .div21{
-      @include rhombus($img21);
-   }
-   .div22{
-      @include rhombus($img22);
-   }
-   .div23{
-      @include rhombus($img23);
-   }
-   .div24{
-      @include rhombus($img24);
-   }
-   .div25{
-      @include rhombus($img25);
-   }
-   .div26{
-      @include rhombus($img26);
-   }
-   .div27{
-      @include rhombus($img27);
-   }
-   .div32{
-      @include rhombus($img32);
-   }
-   .div33{
-      @include rhombus($img33);
-   }
-   .div34{
-      @include rhombus($img34);
-   }
-}
-
-.theme-two{
-   @include padding($padding-2-items);
-   .div28{
-      @include rhombus($img28);
-   }
-   .div29{
-      @include rhombus($img29);
-   }
-   .div30{
-      @include rhombus($img30);
-   }
-   .div31{
-      @include rhombus($img31);
-   }
-   .div35{
-      @include rhombus($img35);
-   }
-   .div36{
-      @include rhombus($img36);
-   }
-   .div37{
-      @include rhombus($img37);
-   }
-   .div38{
-      @include rhombus($img38);
-   }
-   .div43{
-      @include rhombus($img43);
-   }
-   .div44{
-      @include rhombus($img44);
-   }
-
-}
-
-.select {
-    color: #989898;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-h2 {
-    font-size: 28px;
-    text-align: center;
-    font-family: bitter;
-}
-
-.button-style
-{
-    background-color: #fa6023;
-    color: #ffffff;
-    border-radius: 5px;
-    margin: 2% 0% 2% 45%;
-    text-align: center;
-    font-family: Lato;
-    border: none;
-    font-size:  16px;
-    padding: 1% 1% 1% 1%;
 }
 
 .bottom-footer {
@@ -364,25 +185,27 @@ span.orange{
    background: none;
 }
 
-span.white{
-   color: #FFFFFF;
-   background: none;
+.space{
+  padding-left: 92%;
 }
-.project-estimate{
-  display:none;
-  text-align: center;
-  width:  100%;
-  background-color: #E6E6E6;
-  font-family:  Lato;
-  font-family: lato;
-  font-weight: bold;
-  font-size: 30px;
-}
-.triangle-down {
-  width: 100%;
+
+.triangle-up {
+  width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 100px solid red;
-  display:none;
+  border-bottom: 100px solid black;
+  opacity:  5%;
 }
+.progress-bar-container{
+  width:100%;
+  height:4em;
+  background-color: #ffffff;
+  z-index:  5;
+}
+.x{
+  color: grey;
+  width:60%;
+  text-decoration: line-through;
+}
+
