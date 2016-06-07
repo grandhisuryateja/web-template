@@ -5,9 +5,8 @@ $(document).ready(function() {
     var dict = [];
     var data;
     $.getJSON('price.json', function(result) {
-        	// console.log($(self),"self123");
             Data = result.prices;
-   	       // console.log("qwertyuio");
+
              });
 
      function dictionary(Data)
@@ -45,6 +44,7 @@ $(document).ready(function() {
     	$(".progress-bar").each(function(){
      	each_bar_width = y;
     	 $(this).width(each_bar_width + '%');
+    	 $('.tool').show();
   	}); 
            	
     });
@@ -75,7 +75,7 @@ $(document).ready(function() {
     }  
     // console.log(total,"total-b");
     });
-   
+  
      var x = 50;
    	 var totalAll = 0;
    	 maxValue = 5000;
@@ -87,7 +87,7 @@ $(document).ready(function() {
     	dict =  dictionary(Data);
     	totalAll = 0;
     	for(var k = 0 ; k < allSelected.length ; k++)
-    	{
+    	{	
     		 ID = $(allSelected[k]).attr("id")
     		 totalAll = totalAll + parseInt(cost = dict[ID]['value']);
     	}
@@ -98,11 +98,16 @@ $(document).ready(function() {
     	$(".progress-bar").each(function(){
      	each_bar_width = x;
     	 $(this).width(each_bar_width + '%');
+
   	});
    	 $('.progress-bar').find('span').attr('title','x');
-  	 // $('[data-toggle="tooltip"]').tooltip();
-  	 $('[data-toggle="tooltip"]').tooltip('show');
-
     });
+
+
+
+    $(window).scroll(function(){
+     $("#theFixed").css("position",'fixed');
+     $("#theFixed").css("top",Math.max(0,970-$(this).scrollTop()));    
+});
 
 });
