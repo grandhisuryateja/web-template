@@ -44,16 +44,17 @@ $(document).ready(function() {
   });
 
 text ="";
-for(var i=0; i < 15; i++)
+for(var i=1; i <= 14; i++)
 {
 	text = text +"<span id=\"bullet"+ i +"\" class=\"bullet\">&#9670;&emsp;&emsp;&emsp;</span>";
 }
-$('.x').append(text);
+text = text+"<span id=\"bullet"+ 15 +"\" class=\"bullet\">&#9670;</span>";
+$('.background').append(text);
 var w= $(window).width();
-var ww=parseInt($('.x').css('width'));
+var ww=parseInt($('.background').css('width'));
 var marginLeft=w/2-ww/2;
-$('.x').css('margin-left',marginLeft + "px");
-$('#bullet1').css('color','orange');
+$('.background').css('margin-left',marginLeft + "px");
+$('#bullet13').css('color','#fa6023');
 console.log(ww);
 console.log(text,"text");
 

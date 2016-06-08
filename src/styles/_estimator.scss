@@ -147,6 +147,8 @@ h2 {
     font-size: 28px;
     text-align: center;
     font-family: bitter;
+    margin-top: 0px;
+    margin-bottom:  10px;
 }
 
  p{
@@ -186,7 +188,7 @@ span.orange{
 }
 
 .space{
-  padding-left: 92%;
+ // padding-left: 92%;
 }
 
 .triangle-up {
@@ -194,18 +196,37 @@ span.orange{
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 100px solid black;
+  border-bottom: 100px solid white;
   opacity:  5%;
+  content:  "xyz";
+  margin: 42%;  
 }
 .progress-bar-container{
   width:100%;
-  height:4em;
-  background-color: #ffffff;
+  height:6em;
+  background-color: #fa6023;
   z-index:  5;
 }
 .x{
-  color: grey;
+  color: c3c3c3;
   width:60%;
   text-decoration: line-through;
+}
+
+
+
+.background {
+    position: relative;
+    z-index: 1;
+    top:  40%;
+    
+    &:before {
+        border-top: 1px solid black;
+        content:"";
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 51%; left: 1px; right: 0; bottom: 0;
+        width: 99%;
+        z-index: -1;
+    }
 }
 
