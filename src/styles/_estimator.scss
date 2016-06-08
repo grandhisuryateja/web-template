@@ -57,7 +57,7 @@
       -webkit-transform: rotate(45deg);
       overflow: hidden;
       position: relative;
-      background-color: #f6f6f6;
+      background-color: #e6e6e6;
       border: 8px ;
       cursor: pointer;
       .imgclass{
@@ -85,6 +85,8 @@
 @mixin background($background-color)
 {
   background-color: $background-color;
+  height: 500px;
+  padding-top:  6%;
 }
 
 #step-1{
@@ -95,8 +97,36 @@
   @include background($background-color-step-2);
 }
 
+#step-3{
+  @include background($background-color-step-3);
+}
+
+#step-4{
+  @include background($background-color-step-4);
+}
+
+#step-5{
+  @include background($background-color-step-5);
+}
+
+#step-6{
+  @include background($background-color-step-6);
+}
+
+#step-7{
+  @include background($background-color-step-7);
+}
+
+#step-8{
+  @include background($background-color-step-8);
+}
+
+#step-14{
+  @include background($background-color-step-14);
+}
+
 .theme-five{
-   @include padding($padding-5-items);  
+  /*@include padding($padding-5-items);  */
    .div1{
    @include rhombus();
    }
@@ -115,7 +145,8 @@
 }
 
 .theme-four{
-   @include padding($padding-4-items);
+   /*@include padding($padding-4-items);*/
+   
    .div9{
       @include rhombus();
    }
@@ -138,6 +169,109 @@
       @include rhombus();
    }
    .div42{
+      @include rhombus();
+   }
+
+}
+
+
+.theme-three{
+   /*@include padding($padding-3-items);*/
+   .div6{
+      @include rhombus();
+   }
+   .div7{
+      @include rhombus();
+   }
+   .div8{
+      @include rhombus();
+   }
+   .div13{
+      @include rhombus();
+   }
+   .div14{
+      @include rhombus();
+   }
+   .div15{
+      @include rhombus();
+   }
+   .div16{
+      @include rhombus();
+   }
+   .div17{
+      @include rhombus();
+   }
+   .div18{
+      @include rhombus();
+   }
+   .div19{
+      @include rhombus();
+   }
+   .div20{
+      @include rhombus();
+   }
+   .div21{
+      @include rhombus();
+   }
+   .div22{
+      @include rhombus();
+   }
+   .div23{
+      @include rhombus();
+   }
+   .div24{
+      @include rhombus();
+   }
+   .div25{
+      @include rhombus();
+   }
+   .div26{
+      @include rhombus();
+   }
+   .div27{
+      @include rhombus();
+   }
+   .div32{
+      @include rhombus();
+   }
+   .div33{
+      @include rhombus();
+   }
+   .div34{
+      @include rhombus();
+   }
+}
+
+.theme-two{
+   /*@include padding($padding-2-items);*/
+   .div28{
+      @include rhombus();
+   }
+   .div29{
+      @include rhombus();
+   }
+   .div30{
+      @include rhombus();
+   }
+   .div31{
+      @include rhombus();
+   }
+   .div35{
+      @include rhombus();
+   }
+   .div36{
+      @include rhombus();
+   }
+   .div37{
+      @include rhombus();
+   }
+   .div38{
+      @include rhombus();
+   }
+   .div43{
+      @include rhombus();
+   }
+   .div44{
       @include rhombus();
    }
 
@@ -192,39 +326,56 @@ span.orange{
 }
 
 .triangle-up {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid white;
-  opacity:  5%;
-  content:  "xyz";
-  margin: 42%;  
+   
+    height: 0;    
+    padding-left:10%;
+    padding-bottom: 10%;
+    overflow: hidden;  
+}
+.triangle-up:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-500px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #4679BD;
 }
 .progress-bar-container{
   width:100%;
   height:6em;
-  background-color: #fa6023;
+  background-color: #fff;
   z-index:  5;
 }
 .x{
-  color: c3c3c3;
+  color: #c3c3c3;
   width:60%;
   text-decoration: line-through;
 }
+.prev{
+  bottom: 50%;
+}
 
+
+.click-selected{
+  .imagecontainer{
+      background-color: #0c232c !important;
+      }
+}
 
 
 .background {
     position: relative;
     z-index: 1;
     top:  40%;
+    color: #c3c3c3;
     
     &:before {
-        border-top: 1px solid black;
+        border-top: 1px solid #c3c3c3 ;
         content:"";
         position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
-        top: 51%; left: 1px; right: 0; bottom: 0;
+        top: 54%; left: 1px; right: 0; bottom: 0;
         width: 99%;
         z-index: -1;
     }

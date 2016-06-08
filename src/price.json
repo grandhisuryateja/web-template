@@ -8,25 +8,25 @@
        },
        {
            "id" : "platform_Android",
-           "value" : "100",
+           "value" : "200",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Android_white.png",
            "image" : "/img/Assets/Landing-Page/Step-1/Android.png"
        },
        {
            "id" : "platform_Windows",
-           "value" : "100",
+           "value" : "300",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Windows_white.png",
            "image" : "/img/Assets/Landing-Page/Step-1/Windows.png"
        },
        {
            "id" : "platform_Blackberry",
-           "value" : "100",
+           "value" : "400",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Blackberry_white.png",
            "image" : "/img/Assets/Landing-Page/Step-1/Blackberry.png"
        },
        {
            "id" : "platform_Web",
-           "value" : "100",
+           "value" : "500",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-1/Web_white.png",
            "image" : "/img/Assets/Landing-Page/Step-1/Web.png"
        },
