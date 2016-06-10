@@ -45,12 +45,14 @@
 	  </div>
   </div>
   <br>
+  <div>
 <button id="singlebutton" class="btn btn-default center-block btn-lg" type="submit" >Lets Go</button>
+  </div>
   <br>
 </div>
 
 <!-- First page -->
-<div class="container-fluid step" id="step-1">
+<div class="container-fluid step" id="step-1" value="5">
  <div class="row">
     <div class="col-md-12"><h2>What platform will your apps run on?</h2>
   <p class="select">(Select all that apply)</p> </div>
@@ -89,7 +91,7 @@
    	
    	<div class="div5 multiple-click" id="platform_Web"> 	
 	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-1/Web.png" class = "imgclass"/>
+	    		<img src="/img/Assets/Landing-Page/Step-1/Web.png" class="imgclass"/>
 	    	</div>
 	    	<p>Web</p>
 	    </div>
@@ -98,12 +100,15 @@
  </div>
 
 <div class="row">
-     <div class="col-md-4"><span class="glyphicon glyphicon-menu-left prev"></span>
-     <span class="prev">Prev</span></div>
-     <!-- <div class="col-md-3 triangle-up"></div> -->
-     <div class="col-md-4">
-     	<span class="next-text">Next</span>
-    	 <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
+     <div class="col-md-4 prev-text">
+    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+    	 <span>Prev</span>
+     </div>
+    <!--  <div class="col-md-4 triangle-up">
+     <span></span></div> -->
+     <div class="col-md-4 next-text">
+     	<span >Next</span>
+    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
      </div>
  </div>
 </div> 
@@ -144,12 +149,15 @@
  </div>
 
 <div class="row">
-     <div class="col-md-4"><span class="glyphicon glyphicon-menu-left prev"></span>
-     <span class="prev">Prev</span></div>
-     <!-- <div class="col-md-3 triangle-up"></div> -->
-     <div class="col-md-4">
-     	<span class="next-text">Next</span>
-    	 <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
+     <div class="col-md-4 prev-text">
+    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+    	 <span>Prev</span>
+     </div>
+     <!-- <div class="col-md-4 triangle-up">
+     <span></span></div> -->
+     <div class="col-md-4 next-text">
+     	<span >Next</span>
+    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
      </div>
  </div>
 </div> 
@@ -193,12 +201,15 @@
  </div>
 
 <div class="row">
-     <div class="col-md-4"><span class="glyphicon glyphicon-menu-left prev"></span>
-     <span class="prev">Prev</span></div>
-     <!-- <div class="col-md-3 triangle-up"></div> -->
-     <div class="col-md-4">
-      <span class="next-text">Next</span>
-       <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
+     <div class="col-md-4 prev-text">
+    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+    	 <span>Prev</span>
+     </div>
+     <!-- <div class="col-md-4 triangle-up">
+     <span></span></div> -->
+     <div class="col-md-4 next-text">
+     	<span >Next</span>
+    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
      </div>
  </div>
 </div> 	 
@@ -211,39 +222,64 @@
 </div>
  <div class="row theme-three" id="third-page">
    <div class="col-md-3"></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div13 multiple-click" id="dataType_none"> 	
+   <div class="col-md-2 col-sm-4 col-xs-4">
+   <div class="row-md-10">
+   	<div class="div13 multiple-click" id="dataType_none"> 	
 		    	<div class="imagecontainer">
 		    		<img src="/img/Assets/Landing-Page/Step-4/n_a.png" class = "imgclass"/>
 		    	</div>
-		    	<p>N/A</p>
+		    	
+		    </div>
+   </div>
+   <div class="row-md-2">
+   	
+   	<p>N/A</p>
 		    	<span class="inner_span">(I am not storing any data)</span>
-		    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div14 multiple-click" id="dataType_data"> 	
+   </div>
+		    </div>
+   <div class="col-md-2 col-sm-4 col-xs-4">
+   			<div class="row-md-10">
+   					<div class="div14 multiple-click" id="dataType_data"> 	
 		    	<div class="imagecontainer">
 		    		<img src="/img/Assets/Landing-Page/Step-4/data.png" class = "imgclass"/>
 		    	</div>
-		    	<p>Data</p>
+		    	
+		    </div>
+   			</div>
+   			<div class="row-md-2">
+   				<p>Data</p>
 		    	<span class="inner_span">(Just structured data,
 		    	<br>suited for a database)</span>
-		    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div15 multiple-click" id="dataType_largeFiles"> 	
+   			</div>
+	</div>
+   <div class="col-md-2 col-sm-4 col-xs-4">
+   			<div class="row-md-10">
+   				<div class="div15 multiple-click" id="dataType_largeFiles"> 	
 		    	<div class="imagecontainer">
 		    		<img src="/img/Assets/Landing-Page/Step-4/Large-Files.png" class = "imgclass"/>
 		    	</div>
-		    	<p>Large Files</p>
+		    	
+		    </div>
+   			</div>
+   			<div class="row-md-2">
+   				<p>Large Files</p>
 		    	<span class="inner_span">(Structured data plus files
 		    	<br>like images,videos,etc)</span>
-		    </div></div>
+   			</div>
+	</div>
    <div class="col-md-3"></div>
  </div>
 
 <div class="row">
-     <div class="col-md-4"><span class="glyphicon glyphicon-menu-left prev"></span>
-     <span class="prev">Prev</span></div>
-     <!-- <div class="col-md-3 triangle-up"></div> -->
-     <div class="col-md-4">
-      <span class="next-text">Next</span>
-       <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
+     <div class="col-md-4 prev-text">
+    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+    	 <span>Prev</span>
+     </div>
+     <!-- <div class="col-md-4 triangle-up">
+     <span></span></div> -->
+     <div class="col-md-4 next-text">
+     	<span >Next</span>
+    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
      </div>
  </div>
 </div> 
@@ -279,12 +315,15 @@
  </div>
 
 <div class="row">
-     <div class="col-md-4"><span class="glyphicon glyphicon-menu-left prev"></span>
-     <span class="prev">Prev</span></div>
-     <!-- <div class="col-md-3 triangle-up"></div> -->
-     <div class="col-md-4">
-      <span class="next-text">Next</span>
-       <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
+     <div class="col-md-4 prev-text">
+    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+    	 <span>Prev</span>
+     </div>
+     <!-- <div class="col-md-4 triangle-up">
+     <span></span></div> -->
+     <div class="col-md-4 next-text">
+     	<span >Next</span>
+    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
      </div>
  </div>
 </div>
@@ -326,15 +365,18 @@
  </div>
 
 <div class="row">
-     <div class="col-md-4"><span class="glyphicon glyphicon-menu-left prev"></span>
-     <span class="prev">Prev</span></div>
-     <!-- <div class="col-md-3 triangle-up"></div> -->
-     <div class="col-md-4">
-      <span class="next-text">Next</span>
-       <span class="glyphicon glyphicon-menu-right next-icon" id="next"></span>
+     <div class="col-md-4 prev-text">
+    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+    	 <span>Prev</span>
+     </div>
+     <div class="col-md-4 triangle-up">
+     <span></span></div>
+     <div class="col-md-4 next-text">
+     	<span >Next</span>
+    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
      </div>
  </div>
-</div> 	 
+ </div> 	 
 
     
 <!-- Main div ending  -->
@@ -342,6 +384,7 @@
   
 <div class = "progress-bar-container">
 	<span class="background"></span>
+	<div class="bulletian-names">hello</div>
 </div>
 
   <!-- build:js scripts/vendor.js -->
