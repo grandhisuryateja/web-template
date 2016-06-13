@@ -1,403 +1,597 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
-  <meta charset="utf-8" />
-  <title>Hashedin Web template</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css" />
-  <!-- endbuild -->
-
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <meta charset="utf-8" />
+    <title>Hashedin Web template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- endbuild -->
 </head>
+
 <body>
+    <header>
+        <div class="top-header">
+            <img src="/img/Assets/Landing-Page/Header/hashedin_logo.png">
+        </div>
+    </header>
+    <!-- <button id="next">Next</button> -->
+    <div id="all-divs">
+        <div class="step" id="step-0">
+            <div class="start">
+                <div class="left-half">
+                    <img src="/img/Assets/Landing-Page/Header/header_img.png">
+                </div>
+                <div class="right-half">
+                    <div class="main-heading">HOW&nbsp;MUCH
+                        <br>TO&nbsp;MAKE&nbsp;AN&nbsp;APP
+                    </div>
+                    <div class="sub-heading">Estimate the cost of an app easily
+                        <br>using this handy tool.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div>
+                    <button id="singlebutton" class="btn btn-default center-block btn-lg" type="submit">Lets Go</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!-- First page -->
+        <div class="container-fluid step" id="step-1">
+            <span class="estimated-price">$0</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>What platform will your apps run on?</h2>
+                    <p class="select">(Select all that apply)</p>
+                </div>
+            </div>
+            <div class="row theme-five" id="first-page">
+                <div class="col-md-1">
+                    <div class="prev-text">
+                        <span id="prev-1"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div1 multiple-click" id="platform_iOS">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-1/iOS.png" class="imgclass" />
+                        </div>
+                        <p>iOS</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div2 multiple-click" id="platform_Android">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-1/Android.png" class="imgclass" />
+                        </div>
+                        <p>Android</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div3 multiple-click" id="platform_Windows">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-1/Windows.png" class="imgclass" />
+                        </div>
+                        <p>Windows</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="div4 multiple-click" id="platform_Blackberry">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-1/Blackberry.png" class="imgclass" />
+                        </div>
+                        <p>Blackberry</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="div5 multiple-click" id="platform_Web">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-1/Web.png" class="imgclass" />
+                        </div>
+                        <p>Web</p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-1"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second-page -->
+        <div class="container-fluid step" id="step-2">
+            <span class="estimated-price">$0</span>
+            <span class="estimated-price"></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>How big is your app going to be?</h2>
+                </div>
+            </div>
+            <div class="row theme-three" id="second-page">
+                <div class="col-md-3">
+                    <div class="prev-text">
+                        <span id="prev-2"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div6 single-click" id="size_small" value="100">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-2/small.png" class="imgclass" />
+                        </div>
+                        <p>Small</p>
+                        <span class="inner_span">(1-3 Screens)</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div7 single-click" id="size_medium" value="100">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-2/Medium.png" class="imgclass" />
+                        </div>
+                        <p>Medium</p>
+                        <span class="inner_span">(3-8 Screens)</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div8 single-click" id="size_large" value="100">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-2/Large.png" class="imgclass" />
+                        </div>
+                        <p>Large</p>
+                        <span class="inner_span">(9+ Screens)</span>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-2"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Third page  -->
+        <div class="container-fluid step" id="step-3">
+            <span class="estimated-price">$0</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>How will you handle user management?</h2>
+                    <p class="select">(Select all that apply)</p>
+                </div>
+            </div>
+            <div class="row theme-four" id="third-page">
+                <div class="col-md-2">
+                    <div class="prev-text">
+                        <span id="prev-3"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div9 multiple-click" id="userManagement_none">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-3/n_a.png" class="imgclass" />
+                        </div>
+                        <p>N/A</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div10 multiple-click" id="userManagement_standard">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-3/Standard.png" class="imgclass" />
+                        </div>
+                        <p>Standard</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div11 multiple-click" id="userManagement_social">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-3/Social.png" class="imgclass" />
+                        </div>
+                        <p>Social</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div12 multiple-click" id="userManagement_enterprise">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-3/Enterprise.png" class="imgclass" />
+                        </div>
+                        <p>Enterprise</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-3"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fourth Page -->
+        <div class="container-fluid step" id="step-4">
+            <span class="estimated-price">$0</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>What kind of data will you store?</h2>
+                    <p class="select">(Select all that apply)</p>
+                </div>
+            </div>
+            <div class="row theme-three" id="third-page">
+                <div class="col-md-3">
+                    <div class="prev-text">
+                        <span id="prev-4"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="row-md-10">
+                        <div class="div13 multiple-click" id="dataType_none">
+                            <div class="imagecontainer">
+                                <img src="/img/Assets/Landing-Page/Step-4/n_a.png" class="imgclass" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-md-2">
+                        <p>N/A</p>
+                        <span class="inner_span">(I am not storing any data)</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="row-md-10">
+                        <div class="div14 multiple-click" id="dataType_data">
+                            <div class="imagecontainer">
+                                <img src="/img/Assets/Landing-Page/Step-4/data.png" class="imgclass" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-md-2">
+                        <p>Data</p>
+                        <span class="inner_span">(Just structured data,
+              <br>suited for a database)</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="row-md-10">
+                        <div class="div15 multiple-click" id="dataType_largeFiles">
+                            <div class="imagecontainer">
+                                <img src="/img/Assets/Landing-Page/Step-4/Large-Files.png" class="imgclass" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-md-2">
+                        <p>Large Files</p>
+                        <span class="inner_span">(Structured data plus files
+              <br>like images,videos,etc)</span>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-4"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<header>
-    <div class="top-header">
-    <img src="/img/Assets/Landing-Page/Header/hashedin_logo.png">
+        <!-- Fifth-page -->
+        <div class="container-fluid step" id="step-5">
+            <span class="estimated-price">$0</span>
+            <span class="estimated-price"></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Will you need to integrate any existing data sources?</h2>
+                </div>
+            </div>
+            <div class="row theme-three" id="fifth-page">
+                <div class="col-md-3">
+                    <div class="prev-text">
+                        <span id="prev-5"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div16 single-click" id="existingDataSources_none">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-5/no.png" class="imgclass" />
+                        </div>
+                        <p>No</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div17 single-click" id="existingDataSources_simple">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-5/simple.png" class="imgclass" />
+                        </div>
+                        <p>Simple</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div18 single-click" id="existingDataSources_advanced">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-5/Advanced.png" class="imgclass" />
+                        </div>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-5"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth page -->
+    	    <div class="container-fluid step" id="step-6">
+            <span class="estimated-price">$0</span>
+            <span class="estimated-price"></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Will your app use location data?</h2>
+                </div>
+            </div>
+            <div class="row theme-three" id="sixth-page">
+                <div class="col-md-3">
+                    <div class="prev-text">
+                        <span id="prev-6"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div19 single-click" id="locationData_none">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-6/no.png" class="imgclass" />
+                        </div>
+                        <p>No</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div20 single-click" id="locationData_simple">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-6/simple.png" class="imgclass" />
+                        </div>
+                        <p>Simple</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div21 single-click" id="locationData_advanced">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-6/Advanced.png" class="imgclass" />
+                        </div>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-6"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seventh page -->
+        <div class="container-fluid step" id="step-7">
+            <span class="estimated-price">$0</span>
+            <span class="estimated-price"></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Will you integrate data from any third party cloud APIs?</h2>
+                </div>
+            </div>
+            <div class="row theme-three" id="seventh-page">
+                <div class="col-md-3">
+                    <div class="prev-text">
+                        <span id="prev-7"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div22 single-click" id="thirdPartyCloudAPI_none">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-7/no.png" class="imgclass" />
+                        </div>
+                        <p>No</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div23 single-click" id="thirdPartyCloudAPI_simple">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-7/simple.png" class="imgclass" />
+                        </div>
+                        <p>Simple</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div24 single-click" id="thirdPartyCloudAPI_advanced">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-7/Advanced.png" class="imgclass" />
+                        </div>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-7"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Eigth-page -->
+        <div class="container-fluid step" id="step-8">
+            <span class="estimated-price">$0</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>How will you engage with your users?</h2>
+                    <p class="select">(Select all that apply)</p>
+                </div>
+            </div>
+            <div class="row theme-three" id="eigth-page">
+                <div class="col-md-3">
+                    <div class="prev-text">
+                        <span id="prev-8"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div25 multiple-click" id="userEngagement_none">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-8/n_a.png" class="imgclass" />
+                        </div>
+                        <p>N/A</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div26 multiple-click" id="userEngagement_push">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-8/Push_SMS_Email.png" class="imgclass" />
+                        </div>
+                        <p>Push,SMS,Email</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div27 multiple-click" id="userEngagement_social">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-8/Advanced_social.png" class="imgclass" />
+                        </div>
+                        <p> Advanced&nbsp;social integration</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-8"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Fourteenth page -->
+        <div class="container-fluid step" id="step-14">
+            <span class="estimated-price">$0</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Will your app leverage an existing backend application?</h2>
+                </div>
+            </div>
+            <div class="row theme-four" id="fourteenth-page">
+                <div class="col-md-2">
+                    <div class="prev-text">
+                        <span id="prev-14"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div39 single-click" id="backend_none">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-14/No_major_backend_logic.png" class="imgclass" />
+                        </div>
+                        <p>No major backend logic</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div40 single-click" id="backend_builtWithService">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-14/with_ready_service.png" class="imgclass" />
+                        </div>
+                        <p>Backend build with ready services</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div41 single-click" id="backend_builtWithoutService">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-14/not_service_enabled.png" class="imgclass" />
+                        </div>
+                        <p>Backend build not service enabled</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="div42 single-click" id="backend_toCreate">
+                        <div class="imagecontainer">
+                            <img src="/img/Assets/Landing-Page/Step-14/needs_to_be_created.png" class="imgclass" />
+                        </div>
+                        <p>Backend&nbsp;needs to be created</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1">
+                    <div class="next-text">
+                        <span id="next-14"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Main div ending  -->
     </div>
-</header>
-
-  
-<!-- <button id="next">Next</button> -->
-<div id="all-divs">
-
-
-<div class = "step" id="step-0">
-<div class = "start">
-	  <div class = "left-half">	
-			<img src="/img/Assets/Landing-Page/Header/header_img.png">
-		</div>
-	
-	  <div class="right-half">
-	  <div class = "main-heading">HOW&nbsp;MUCH
-	  <br>TO&nbsp;MAKE&nbsp;AN&nbsp;APP</div>
-	  <div class = "sub-heading">Estimate the cost of an app easily
-	  <br>using this handy tool.</div>
-	  </div>
-  </div>
-  <br>
-  <div>
-<button id="singlebutton" class="btn btn-default center-block btn-lg" type="submit" >Lets Go</button>
-  </div>
-  <br>
-</div>
-
-<!-- First page -->
-<div class="container-fluid step" id="step-1" value="5">
- <div class="row">
-    <div class="col-md-12"><h2>What platform will your apps run on?</h2>
-  <p class="select">(Select all that apply)</p> </div>
-</div>
- <div class="row theme-five" id="first-page">
-   <div class="col-md-1"></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div1 multiple-click" id="platform_iOS"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-1/iOS.png" class = "imgclass"/>
-	    	</div>
-	    	<p>iOS</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div2 multiple-click" id="platform_Android"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-1/Android.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Android</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   	 <div class="div3 multiple-click" id="platform_Windows"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-1/Windows.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Windows</p>
-	    </div>
-   </div>
-   <div class="col-md-2 col-sm-6 col-xs-6">
-   	 <div class="div4 multiple-click" id="platform_Blackberry"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-1/Blackberry.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Blackberry</p>
-	    </div>
-   </div>
-   <div class="col-md-2 col-sm-6 col-xs-6">
-   	
-   	<div class="div5 multiple-click" id="platform_Web"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-1/Web.png" class="imgclass"/>
-	    	</div>
-	    	<p>Web</p>
-	    </div>
-   </div>
-   <div class="col-md-1"></div>
- </div>
-
-<div class="row">
-     <div class="col-md-4 prev-text">
-    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
-    	 <span>Prev</span>
-     </div>
-    <!--  <div class="col-md-4 triangle-up">
-     <span></span></div> -->
-     <div class="col-md-4 next-text">
-     	<span >Next</span>
-    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
-     </div>
- </div>
-</div> 
-
-<!-- second-page -->
-<div class="container-fluid step" id="step-2">
- <div class="row">
-    <div class="col-md-12"><h2>How big is your app going to be?</h2> </div>
-</div>
- <div class="row theme-three" id="second-page">
-   <div class="col-md-3"></div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   	<div class="div6 single-click" id="size_small" value="100"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-2/small.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Small</p>
-		    	<span class="inner_span">(1-3 Screens)</span>
-		    </div>
-   </div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div7 single-click"  id="size_medium" value="100"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-2/Medium.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Medium</p>
-		    	<span class="inner_span">(3-8 Screens)</span>
-		    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   	<div class="div8 single-click" id="size_large" value="100"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-2/Large.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Large</p>
-		    	<span class="inner_span">(9+ Screens)</span>
-		    </div>
-   </div>
-   <div class="col-md-3"></div>
- </div>
-
-<div class="row">
-     <div class="col-md-4 prev-text">
-    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
-    	 <span>Prev</span>
-     </div>
-     <!-- <div class="col-md-4 triangle-up">
-     <span></span></div> -->
-     <div class="col-md-4 next-text">
-     	<span >Next</span>
-    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
-     </div>
- </div>
-</div> 
-
-	    <!--Third page  -->
-
-	<div class="container-fluid step" id="step-3">
- <div class="row">
-    <div class="col-md-12"><h2>How will you handle user management?</h2>
-	<p class="select">(Select all that apply)</p> </div>
-</div>
- <div class="row theme-four" id="third-page">
-   <div class="col-md-2"></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div9 multiple-click" id="userManagement_none"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-3/n_a.png" class = "imgclass"/>
-	    	</div>
-	    	<p>N/A</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div10 multiple-click" id="userManagement_standard"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-3/Standard.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Standard</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div11 multiple-click" id="userManagement_social"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-3/Social.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Social</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   	<div class="div12 multiple-click" id="userManagement_enterprise"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-3/Enterprise.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Enterprise</p>
-	    </div>
-   </div>
-   <div class="col-md-2"></div>
- </div>
-
-<div class="row">
-     <div class="col-md-4 prev-text">
-    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
-    	 <span>Prev</span>
-     </div>
-     <!-- <div class="col-md-4 triangle-up">
-     <span></span></div> -->
-     <div class="col-md-4 next-text">
-     	<span >Next</span>
-    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
-     </div>
- </div>
-</div> 	 
-
-   <!--Fourth Page -->
-<div class="container-fluid step" id="step-4">
- <div class="row">
-    <div class="col-md-12"><h2>What kind of data will you store?</h2>
-	<p class="select">(Select all that apply)</p></div>
-</div>
- <div class="row theme-three" id="third-page">
-   <div class="col-md-3"></div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   <div class="row-md-10">
-   	<div class="div13 multiple-click" id="dataType_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-4/n_a.png" class = "imgclass"/>
-		    	</div>
-		    	
-		    </div>
-   </div>
-   <div class="row-md-2">
-   	
-   	<p>N/A</p>
-		    	<span class="inner_span">(I am not storing any data)</span>
-   </div>
-		    </div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   			<div class="row-md-10">
-   					<div class="div14 multiple-click" id="dataType_data"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-4/data.png" class = "imgclass"/>
-		    	</div>
-		    	
-		    </div>
-   			</div>
-   			<div class="row-md-2">
-   				<p>Data</p>
-		    	<span class="inner_span">(Just structured data,
-		    	<br>suited for a database)</span>
-   			</div>
-	</div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   			<div class="row-md-10">
-   				<div class="div15 multiple-click" id="dataType_largeFiles"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-4/Large-Files.png" class = "imgclass"/>
-		    	</div>
-		    	
-		    </div>
-   			</div>
-   			<div class="row-md-2">
-   				<p>Large Files</p>
-		    	<span class="inner_span">(Structured data plus files
-		    	<br>like images,videos,etc)</span>
-   			</div>
-	</div>
-   <div class="col-md-3"></div>
- </div>
-
-<div class="row">
-     <div class="col-md-4 prev-text">
-    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
-    	 <span>Prev</span>
-     </div>
-     <!-- <div class="col-md-4 triangle-up">
-     <span></span></div> -->
-     <div class="col-md-4 next-text">
-     	<span >Next</span>
-    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
-     </div>
- </div>
-</div> 
-
-<!-- Eigth-page -->
-<div class="container-fluid step" id="step-8">
- <div class="row">
-    <div class="col-md-12"><h2>How will you engage with your users?</h2>
-	<p class="select">(Select all that apply)</p> </div>
-</div>
- <div class="row theme-three" id="eigth-page">
-   <div class="col-md-3"></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div25 multiple-click" id="userEngagement_none"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-8/n_a.png" class = "imgclass"/>
-		    	</div>
-		    	<p>N/A</p>
-		    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   <div class="div26 multiple-click" id="userEngagement_push"> 	
-		    	<div class="imagecontainer" >
-		    		<img src="/img/Assets/Landing-Page/Step-8/Push_SMS_Email.png" class = "imgclass"/>
-		    	</div>
-		    	<p>Push,SMS,Email</p>
-		    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div27 multiple-click" id="userEngagement_social"> 	
-		    	<div class="imagecontainer">
-		    		<img src="/img/Assets/Landing-Page/Step-8/Advanced_social.png" class = "imgclass"/>
-		    	</div>
-		    	<p> Advanced&nbsp;social integration</p>
-		    </div></div>
-   <div class="col-md-3"></div>
- </div>
-
-<div class="row">
-     <div class="col-md-4 prev-text">
-    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
-    	 <span>Prev</span>
-     </div>
-     <!-- <div class="col-md-4 triangle-up">
-     <span></span></div> -->
-     <div class="col-md-4 next-text">
-     	<span >Next</span>
-    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
-     </div>
- </div>
-</div>
-
-<!-- Fourteenth page -->
-<div class="container-fluid step" id="step-14">
- <div class="row">
-    <div class="col-md-12"><h2>Will your app leverage an existing backend application?</h2></div>
-</div>
- <div class="row theme-four" id="fourteenth-page">
-   <div class="col-md-2"></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div39 single-click" id="backend_none">  	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/No_major_backend_logic.png" class = "imgclass"/>
-	    	</div>
-	    	<p>No major backend logic</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div40 single-click" id="backend_builtWithService"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/with_ready_service.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Backend build with ready services</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4"><div class="div41 single-click" id="backend_builtWithoutService"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/not_service_enabled.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Backend build not service enabled</p>
-	    </div></div>
-   <div class="col-md-2 col-sm-4 col-xs-4">
-   	<div class="div42 single-click" id="backend_toCreate"> 	
-	    	<div class="imagecontainer">
-	    		<img src="/img/Assets/Landing-Page/Step-14/needs_to_be_created.png" class = "imgclass"/>
-	    	</div>
-	    	<p>Backend&nbsp;needs  to be created</p>
-	    </div>
-   </div>
-   <div class="col-md-2"></div>
- </div>
-
-<div class="row">
-     <div class="col-md-4 prev-text">
-    	<span id="prev"><img src="/img/Assets/Landing-Page/Step-1/arrow_left.png" /></span>
-    	 <span>Prev</span>
-     </div>
-     <div class="col-md-4 triangle-up">
-     <span></span></div>
-     <div class="col-md-4 next-text">
-     	<span >Next</span>
-    	 <span id="next"><img src="/img/Assets/Landing-Page/Step-1/arrow_right.png" /></span>
-     </div>
- </div>
- </div> 	 
-
-    
-<!-- Main div ending  -->
-</div>
-  
-<div class = "progress-bar-container">
-	<span class="background"></span>
-	<div class="bulletian-names">hello</div>
-</div>
-
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="libs/jquery/dist/jquery.js"></script>
-  <script src="libs/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/app.js"></script>
-  <!-- endbuild -->
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <div class="progress-bar-container">
+        <div class="diamond-container">
+            <div class="line"></div>
+            <div class="diamond-line">
+                <div class="diamond" id="diamond-1">&#9670;<br><label class="label-1">Platform</label></div>
+                <div class="diamond" id="diamond-2">&#9670;<br><label class="label-2">&emsp;&ensp;Size </label></div>
+                <div class="diamond" id="diamond-3">&#9670;<br>
+                    <label class="label-3">User&nbsp;Management</label>
+                </div>
+                <div class="diamond" id="diamond-4">&#9670;<br>
+                    <label class="label-4">Data&nbsp;Type</label>
+                </div>
+                <div class="diamond" id="diamond-5">&#9670;<br>
+                    <label class="label-5">Existing&nbsp;Data&nbsp;Sources</label>
+                </div>
+                <div class="diamond" id="diamond-6">&#9670;<br>
+                    <label class="label-6">Location&nbsp;Data</label>
+                </div>
+                <div class="diamond" id="diamond-7">&#9670;<br>
+                    <label class="label-7">Third&nbsp;Party&nbsp;Cloud&nbsp;API</label>
+                </div>
+                <div class="diamond" id="diamond-8">&#9670;<br>
+                    <label class="label-8">User&nbsp;Engagement</label>
+                </div>
+                <div class="diamond" id="diamond-9">&#9670;<br>
+                    <label class="label-9">Quality</label>
+                </div>
+                <div class="diamond" id="diamond-10">&#9670;<br>
+                    <label class="label-10">Security</label>
+                </div>
+                <div class="diamond" id="diamond-11">&#9670;<br>
+                    <label class="label-11">Analytics</label>
+                </div>
+                <div class="diamond" id="diamond-12">&#9670;<br>
+                    <label class="label-12">Reliabilty</label>
+                </div>
+                <div class="diamond" id="diamond-13">&#9670;<br>
+                    <label class="label-13">Web&nbsp;Portal</label>
+                </div>
+                <div class="diamond" id="diamond-14">&#9670;<br>
+                    <label class="label-14">Backend</label>
+                </div>
+                <div class="diamond" id="diamond-15">&#9670;<br>
+                    <label class="label-15">Offline&nbsp;Support</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </body>
+
 </html>
