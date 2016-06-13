@@ -26,9 +26,6 @@ $(document).ready(function() {
     var content = ['Index Page', 'Platform &emsp;', 'Size &emsp;&emsp;', 'User&emsp; Management', 'Data Type', 'Existing Data Sources',
         'Location Data', 'Third-Party Cloud API', 'User Engagement', 'Quality &emsp;', 'Security &emsp;', 'Analytics'
     ];
-    // var content = ['Data Data','Data Data','Data Data','Data cata','Data &emsp;','Data Data','Data ata'
-    // ,'Data Data','Data Data','Data Data','Data Data','Data Data','Data Data','Data Data','Data Data','Data Data'];
-
     var $steps = $('.step');
     var currentStep = 1,
         prevStep,
@@ -42,7 +39,9 @@ $(document).ready(function() {
         $('.label-1').css('opacity', '1');
 
     });
-
+    /***
+    This function is for going to the next page on clicking the next button.
+    */
     $('[id^=next]').on('click', function(e) {
         e.preventDefault();
         var stepId = parseInt($(this).parent().parent().parent().parent().attr('id').replace(/[a-z,-]/g, ''));
@@ -51,19 +50,17 @@ $(document).ready(function() {
         	alert("Please select one of the options below");
         	return;
         }
+        for(var i = 1; i <= 15 ; i++)
+        {
+        	if($('#step-' + i ).children().children().children().hasClass('click-selected'))
+        		$('#diamond-' + i).css('color','#0c232c');
+        }
         stepId = stepId + 1;
         //console.log($('#bullet'+stepId).attr('class'),'classname');
         $('[id^=diamond]').removeClass('diamond-select');
         $('#diamond-' + stepId).addClass('diamond-select');
-        for(var i = 0; i < stepId ; i++)
-        {
-        	console.log("for;o")
-        	$('#diamond-' + i).css('color','#0c232c');
-        	// $('#diamond-' + i).addClass('diamond-selected');
-        }
         $('[class^=label]').css('opacity', '0');
         $('.label-' + stepId).css('opacity', '1');
-        // $('.label-'+stepId).html(content[stepId]);
         nextStep = currentStep + 1;
         console.log(stepId, "stepId");
         if (nextStep == $steps.length) {
@@ -74,7 +71,9 @@ $(document).ready(function() {
         $($steps.get(nextStep)).show();
         currentStep = nextStep;
     });
-
+   /***
+    This function is for going to the previous page on clicking the next button.
+    */
 
     $('[id^=prev]').on('click', function(e) {
         console.log("entered prev click");
