@@ -19,6 +19,9 @@ $(document).ready(function() {
             temp['value'] = data[i].value;
             temp['imageWhite'] = data[i].imageWhite;
             temp['image'] = data[i].image;
+            temp['resultImage'] = data[i].resultImage;
+            temp['resultHeading'] = data[i].resultHeading;
+            temp['resultContent'] = data[i].resultContent;
             dict[data[i].id] = temp;
         }
         return dict;
@@ -57,8 +60,9 @@ $(document).ready(function() {
         }
         stepId = stepId + 1;
         //console.log($('#bullet'+stepId).attr('class'),'classname');
-        $('[id^=diamond]').removeClass('diamond-select');
-        $('#diamond-' + stepId).addClass('diamond-select');
+        // $('[id^=diamond]').removeClass('diamond-select');
+        // $('#diamond-' + stepId).addClass('diamond-select');
+        $('#diamond-' + stepId).css('color','#fa6023');
         $('[class^=label]').css('opacity', '0');
         $('.label-' + stepId).css('opacity', '1');
         nextStep = currentStep + 1;
@@ -85,7 +89,7 @@ $(document).ready(function() {
         		$('#diamond-' + i).css('color','#0c232c');
         }
         stepId = stepId - 1;
-        $('[id^=diamond]').removeClass('diamond-select');
+        //$('[id^=diamond]').removeClass('diamond-select');
         $('#diamond-' + stepId).css('color','#fa6023');
         $('[class^=label]').css('opacity', '0');
         $('.label-' + stepId).css('opacity', '1');
@@ -163,6 +167,18 @@ $(document).ready(function() {
         selected = 0;
         console.log(total, selectedValue, "total,temp");
         $(".estimated-price").html("$" + total);
+        results = $('[id^=step]').find('.click-selected');
+        console.log(results[1].id,'results[1]')
+        	id = results[1].id;
+          resultImage = dict[id]['resultImage'];
+          resultHeading = dict[id]['resultHeading'];
+          resultContent = dict[id]['resultContent'];
+   
+         console.log(resultContent,resultImage,resultHeading);
+         console.log($('.heading-2'),"heading-2");
+        $('.image-2').attr("src",resultImage);
+        $('.heading-2').html(resultHeading);
+        $('.content-2').html(resultContent);
     });
 
 });

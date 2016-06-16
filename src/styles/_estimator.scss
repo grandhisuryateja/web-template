@@ -123,16 +123,25 @@
     @include background($background-color-step-8);
 }
 #step-9 {
-    @include background($background-color-step-8);
+    @include background($background-color-step-9);
 }
 #step-10 {
-    @include background($background-color-step-8);
+    @include background($background-color-step-10);
 }
 #step-11 {
-    @include background($background-color-step-8);
+    @include background($background-color-step-11);
+}
+#step-12 {
+    @include background($background-color-step-12);
+}
+#step-13 {
+    @include background($background-color-step-13);
 }
 #step-14 {
     @include background($background-color-step-14);
+}
+#step-15 {
+    @include background($background-color-step-15);
 }
 .theme-five {
     /*@include padding($padding-5-items);  */
@@ -292,7 +301,7 @@ h2 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
-p {
+.img-title,.select {
     padding-top: 0px;
     color: #333;
     text-align: center;

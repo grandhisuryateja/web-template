@@ -34,19 +34,25 @@
            "id" : "size_small",
            "value" : "100",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-2/small_white.png",
-           "image" : "/img/Assets/Landing-Page/Step-2/small.png"
+           "image" : "/img/Assets/Landing-Page/Step-2/small.png",
+           "resultImage" : "/img/Assets/Result-Page/1/s_small.png",
+           "resultHeading" : "size",
+           "resultContent" : "Small"
+
        },
        {
            "id" : "size_medium",
            "value" : "200",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-2/Medium_white.png",
-           "image" : "/img/Assets/Landing-Page/Step-2/Medium.png"
+           "image" : "/img/Assets/Landing-Page/Step-2/Medium.png",
+           "resultImage" : "/img/Assets/Result-Page/1/s_Medium.png"
        },
        {
            "id" : "size_large",
            "value" : "300",
            "imageWhite"  : "/img/Assets/Landing-Page/Step-2/Large_white.png",
-           "image" : "/img/Assets/Landing-Page/Step-2/Large.png"
+           "image" : "/img/Assets/Landing-Page/Step-2/Large.png",
+           "resultImage" : "/img/Assets/Result-Page/1/s_Large.png"
        },
        {
            "id" : "userManagement_none",
